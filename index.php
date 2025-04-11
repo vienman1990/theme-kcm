@@ -15,8 +15,9 @@
 get_header();
 ?>
 
-	<?php get_template_part( 'parts/top/hero'); ?>
-	<?php get_template_part( 'parts/top/card'); ?>
+	<?php //get_template_part( 'parts/top/hero'); ?>
+	<?php //get_template_part( 'parts/top/card'); ?>
+	<?php get_template_part( 'parts/top/posts'); ?>
 
 <?php
 get_footer();

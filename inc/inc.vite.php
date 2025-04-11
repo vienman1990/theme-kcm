@@ -50,15 +50,21 @@ add_action( 'wp_enqueue_scripts', function() {
             // get first key, by default is 'main.js' but it can change
             // $manifest_key = array_keys($manifest);
 
-            foreach ($manifest as $value) {
-                if (substr($value['file'], -4) == '.css') {
-                    wp_enqueue_style( 'main', DIST_URI . '/' . $value['file'] );
-                }
-            }
+            // foreach ($manifest as $value) {
+            //     if (substr($value['file'], -4) == '.css') {
+            //         wp_enqueue_style( 'main', DIST_URI . '/' . $value['file'] );
+            //     }
+            // }
 
             foreach ($manifest as $value) {
                 if (substr($value['file'], -3) == '.js') {
                     wp_enqueue_script( 'main', DIST_URI . '/' . $value['file'], array(), '', true );
+                
+                    if (!empty($value['css'])) {
+                        foreach ($value['css'] as $css) {
+                            wp_enqueue_style( 'main', DIST_URI . '/' . $css );
+                        }
+                    }
                 }
             }
 
