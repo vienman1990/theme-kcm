@@ -1,2 +1,52 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, retro, cyberpunk, valentine, aqua;
+}
+
+.content {
+  @apply max-w-[1040px] mx-auto px-5 py-10;
+  @apply flex flex-col text-base gap-5;
+
+  h1:not([class]),
+  h1.wp-block-heading {
+    @apply text-4xl font-bold;
+  }
+
+  h2:not([class]),
+  h2.wp-block-heading {
+    @apply text-2xl font-bold;
+  }
+
+  h3:not([class]),
+  h3.wp-block-heading {
+    @apply text-xl font-bold;
+  }
+
+  h4:not([class]),
+  h4.wp-block-heading {
+    @apply text-lg font-bold;
+  }
+
+  h5:not([class]),
+  h5.wp-block-heading {
+    @apply text-base font-bold;
+  }
+
+  h6:not([class]),
+  h6.wp-block-heading {
+    @apply text-sm font-bold;
+  }
+
+
+  ul:not([class]) {
+    @apply list-disc list-inside;
+  }
+
+  ol:not([class]) {
+    @apply list-decimal list-inside;
+  }
+
+  blockquote:not([class]) {
+    @apply border-l-2 border-gray-300 pl-5;
+  }
+}

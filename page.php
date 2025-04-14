@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<main class=" max-w-[1040px] mx-auto px-5 py-10">
+	<main class="content">
 
 		<?php
 		while ( have_posts() ) :
