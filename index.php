@@ -19,21 +19,96 @@ get_header();
 	<?php //get_template_part( 'parts/top/card'); ?>
 	<?php //get_template_part( 'parts/top/posts'); ?>
 
-	<div class="collapse bg-base-100 border border-base-300">
-  <input type="radio" name="my-accordion-1" checked="checked" />
-  <div class="collapse-title font-semibold">How do I create an account?</div>
-  <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the registration process.</div>
-</div>
-<div class="collapse bg-base-100 border border-base-300">
-  <input type="radio" name="my-accordion-1" />
-  <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-  <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the instructions sent to your email.</div>
-</div>
-<div class="collapse bg-base-100 border border-base-300">
-  <input type="radio" name="my-accordion-1" />
-  <div class="collapse-title font-semibold">How do I update my profile information?</div>
-  <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make changes.</div>
-</div>
+  <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+  <li>
+    <div class="timeline-start">1984</div>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima optio odio dignissimos quo, repellendus similique, qui eum totam doloribus et vero labore harum sed nulla itaque, sint numquam culpa.</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-start">1998</div>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iMac</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-start">2001</div>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iPod</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-start">2007</div>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">iPhone</div>
+    <hr />
+  </li>
+  <li>
+    <hr />
+    <div class="timeline-start">2015</div>
+    <div class="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="h-5 w-5">
+        <path
+          fill-rule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clip-rule="evenodd" />
+      </svg>
+    </div>
+    <div class="timeline-end timeline-box">Apple Watch</div>
+  </li>
+</ul>
 
 <?php
 get_footer();

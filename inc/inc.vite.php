@@ -46,15 +46,6 @@ add_action( 'wp_enqueue_scripts', function() {
         
         // is ok
         if (is_array($manifest)) {
-            
-            // get first key, by default is 'main.js' but it can change
-            // $manifest_key = array_keys($manifest);
-
-            // foreach ($manifest as $value) {
-            //     if (substr($value['file'], -4) == '.css') {
-            //         wp_enqueue_style( 'main', DIST_URI . '/' . $value['file'] );
-            //     }
-            // }
 
             foreach ($manifest as $value) {
                 if (substr($value['file'], -3) == '.js') {
@@ -73,4 +64,16 @@ add_action( 'wp_enqueue_scripts', function() {
     }
 
 
+});
+
+add_action( 'admin_enqueue_scripts', function() {
+    if (defined('IS_VITE_DEVELOPMENT') && IS_VITE_DEVELOPMENT === true) {
+    
+        // insert hmr into head for live reload
+        function vite_head_module_hook() {
+            echo '<script type="module" crossorigin src="' . VITE_SERVER . VITE_ENTRY_POINT . '"></script>';
+        }
+        add_action('admin_head', 'vite_head_module_hook');
+
+    }
 });
