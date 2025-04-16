@@ -49,4 +49,10 @@
   blockquote:not([class]) {
     @apply border-l-2 border-gray-300 pl-5;
   }
+
+}
+
+.profile {
+  @apply grid grid-cols-1 gap-5 px-2.5 py-5 border-b border-base-300;
+  @apply md:grid-cols-[120px_auto];
 }

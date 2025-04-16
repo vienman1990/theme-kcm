@@ -6,7 +6,7 @@
 	// var useState = wp.element.useState;
 
 	registerBlockType( 'kcm/accordion', {
-			title: __( 'Accordion', 'mytheme' ),
+			title: __( 'Accordion', 'kcm' ),
 			category: 'widgets',
 			supports: {
 					html: false,
@@ -45,7 +45,7 @@
 
 					return el(
 							'div',
-							{ className: 'collapse bg-base-100 border border-base-300' },
+							{ className: 'collapse collapse-arrow bg-base-100 border border-base-300' },
 							el(
 									'input',
 									{
@@ -78,7 +78,7 @@
 			save: function( props ) {
 					return el(
 							'div',
-							{ className: 'collapse bg-base-100 border border-base-300' },
+							{ className: 'collapse collapse-arrow bg-base-100 border border-base-300' },
 							el(
 									'input',
 									{
