@@ -12,6 +12,8 @@ get_header();
 
 	<main id="primary" class="content">
 
+		<h1 class=" text-3xl font-bold my-5"> <?php the_archive_title() ?></h1>
+
 		<div class="grid grid-cols-3 gap-5">
 
 		<?php if ( have_posts() ) : ?>
@@ -25,7 +27,7 @@ get_header();
 
 			endwhile;
 
-			the_posts_navigation();
+			dm_wp_pagenavi();
 
 		endif;
 		?>
