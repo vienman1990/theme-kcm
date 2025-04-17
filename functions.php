@@ -105,4 +105,5 @@ add_action( 'after_setup_theme', 'kcm_setup' );
 include_once get_template_directory() . '/inc/inc.vite.php';
 include_once get_template_directory() . '/inc/common.php';
 include_once get_template_directory() . '/inc/blocks.php';
+include_once get_template_directory() . '/inc/pagenavi.php';
 

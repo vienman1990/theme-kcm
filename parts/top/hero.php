@@ -7,7 +7,6 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?<br/><br/>
       12月<br/>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?
-      
     </div>
 </div>
 <div class="grid grid-cols-[60px_3px_auto] gap-4">
