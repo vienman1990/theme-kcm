@@ -40,7 +40,7 @@
 					RichText,
 					{
 						tagName: 'div',
-						className: 'profile-title',
+						className: '--title',
 						value: title,
 						onChange: onChangeTitle,
 						placeholder: __( 'Enter profile title...', 'mytheme' ),
@@ -50,7 +50,7 @@
 					RichText,
 					{
 						tagName: 'div',
-						className: 'profile-content',
+						className: '--content',
 						value: content,
 						onChange: onChangeContent,
 						placeholder: __( 'Enter profile content...', 'mytheme' ),
@@ -63,14 +63,20 @@
 				'div',
 				{ className: 'profile' },
 				el(
-					'div',
-					{ className: 'profile-title' },
-					props.attributes.title
+					RichText.Content,
+					{
+							tagName: 'div',
+							className: '--title',
+							value: props.attributes.title || '',
+					}
 				),
 				el(
-					'div',
-					{ className: 'profile-content' },
-					props.attributes.content
+					RichText.Content,
+					{
+							tagName: 'div',
+							className: '--content',
+							value: props.attributes.content || '',
+					}
 				)
 			);
 		},

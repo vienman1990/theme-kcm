@@ -52,7 +52,33 @@
 
 }
 
+.collapse{
+  @apply bg-base-100 border border-base-300;
+}
+.collapse-title {
+  @apply font-semibold;
+}
+.collapse-content {
+  @apply text-sm;
+}
+
 .profile {
-  @apply grid grid-cols-1 gap-5 px-2.5 py-5 border-b border-base-300;
+  @apply grid grid-cols-1 gap-5 px-2.5 py-5 mb-5 border-b border-base-300;
   @apply md:grid-cols-[120px_auto];
+}
+
+.history_wapper {
+  @apply my-5;
+}
+
+.history_item {
+  @apply grid grid-cols-[60px_3px_auto] gap-4;
+
+  .--line {
+    @apply bg-base-300;
+  }
+
+  .--content {
+    @apply pb-4;
+  }
 }

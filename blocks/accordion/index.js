@@ -39,13 +39,9 @@
 							setAttributes( { content: newContent } );
 					}
 
-					function onToggleOpen() {
-							setAttributes( { isOpen: ! isOpen } );
-					}
-
 					return el(
 							'div',
-							{ className: 'collapse collapse-arrow bg-base-100 border border-base-300' },
+							{ className: 'collapse collapse-arrow' },
 							el(
 									'input',
 									{
@@ -57,7 +53,7 @@
 									RichText,
 									{
 											tagName: 'div',
-											className: 'collapse-title font-semibold',
+											className: 'collapse-title',
 											value: title,
 											onChange: onChangeTitle,
 											placeholder: __( 'Enter accordion title...', 'mytheme' ),
@@ -67,7 +63,7 @@
 									RichText,
 									{
 											tagName: 'div',
-											className: 'collapse-content text-sm',
+											className: 'collapse-content',
 											value: content,
 											onChange: onChangeContent,
 											placeholder: __( 'Enter accordion content...', 'mytheme' ),
@@ -78,7 +74,7 @@
 			save: function( props ) {
 					return el(
 							'div',
-							{ className: 'collapse collapse-arrow bg-base-100 border border-base-300' },
+							{ className: 'collapse collapse-arrow' },
 							el(
 									'input',
 									{
@@ -89,13 +85,16 @@
 							),
 							el(
 									'div',
-									{ className: 'collapse-title font-semibold' },
+									{ className: 'collapse-title' },
 									props.attributes.title
 							),
 							el(
-									'div',
-									{ className: 'collapse-content text-sm' },
-									props.attributes.content
+								RichText.Content,
+								{
+										tagName: 'div',
+										className: 'collapse-content',
+										value: props.attributes.content || '',
+								}
 							)
 					);
 			}
