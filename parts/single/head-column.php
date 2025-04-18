@@ -1,0 +1,1 @@
+<div class="badge badge-soft badge-primary"><?php echo firstTermName( get_the_ID(), 'column_cat' ); ?></div>

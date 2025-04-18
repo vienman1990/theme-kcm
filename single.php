@@ -6,7 +6,9 @@
 		while ( have_posts() ) :
 			the_post();
 
-			the_title( '<h1 class=" text-3xl font-bold my-5">', '</h1>' );
+			get_template_part( 'parts/single/head', get_post_type() );
+
+			the_title( '<h1 class=" text-3xl font-bold mb-5">', '</h1>' );
 
 			the_content();
 

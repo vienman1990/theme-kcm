@@ -3,6 +3,8 @@
   themes: light --default, dark --prefersdark, retro, cyberpunk, valentine, aqua;
 }
 
+@source inline("table");
+
 @theme {
   --text-base--line-height: 2;
 }
@@ -54,6 +56,23 @@
     @apply border-l-2 border-gray-300 pl-5;
   }
 
+  .wp-block-media-text {
+    @apply md:grid md:grid-cols-2 md:gap-10 my-5;
+  }
+
+  .wp-block-media-text__content {
+    @apply md:px-0;
+  }
+
+  p > a {
+    @apply text-primary;
+  }
+
+}
+
+
+.single-news .content {
+  @apply max-w-[840px];
 }
 
 .collapse{
@@ -89,7 +108,7 @@
 
 .wp-block-table.recruit {
   table {
-    /* @apply table; */
+    @apply border-b border-primary-content;
   }
 
   th,
