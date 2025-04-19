@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, retro, cyberpunk, valentine, aqua;
+  themes: all;
 }
 
 @source inline("table");
@@ -57,11 +57,11 @@
   }
 
   .wp-block-media-text {
-    @apply md:grid md:grid-cols-2 md:gap-10 my-5;
+    @apply gap-5 md:grid md:grid-cols-2 md:gap-10 my-5;
   }
 
   .wp-block-media-text__content {
-    @apply md:px-0;
+    @apply px-0;
   }
 
   p > a {

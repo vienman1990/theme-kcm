@@ -14,7 +14,7 @@ get_header();
 
 		<h1 class=" text-3xl font-bold my-5">Column</h1>
 
-		<div class="grid grid-cols-3 gap-5">
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
 		<?php if ( have_posts() ) : ?>
 

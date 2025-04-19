@@ -1,45 +1,15 @@
-<div class="content">
-<div class="history_item">
-    <div class="--year">1990年</div>
-    <div class="--line"></div>
-    <div class="--content">
-      ３月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?<br/><br/>
-      12月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col max-w-[700px] lg:flex-row-reverse">
+    <img
+      src="https://placehold.co/200x280/EEE/31343C"
+      class="max-w-sm rounded-lg shadow-2xl"
+    />
+    <div>
+      <h1 class="text-5xl font-bold">Lorem ipsum dolor</h1>
+      <p class="py-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, veritatis animi? Ut nulla dolorum doloremque sapiente nihil expedita blanditiis facere nisi, modi molestiae! Doloremque provident
+      </p>
+      <a href="<?php echo home_url('about'); ?>" class="btn btn-primary">About</a>
     </div>
-</div>
-<div class="grid grid-cols-[60px_3px_auto] gap-4">
-    <div class="">1990年</div>
-    <div class="bg-base-300"></div>
-    <div class="">
-      ３月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?<br/>
-      12月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?
-      
-    </div>
-</div>
-<div class="grid grid-cols-[60px_3px_auto] gap-4">
-    <div class="">1990年</div>
-    <div class="bg-base-300"></div>
-    <div class="">
-      ３月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?<br/>
-      12月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?
-      
-    </div>
-</div>
-<div class="grid grid-cols-[60px_3px_auto] gap-4">
-    <div class="">1990年</div>
-    <div class="bg-base-300"></div>
-    <div class="">
-      ３月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?<br/>
-      12月<br/>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores doloribus perferendis vitae magnam optio ut officia rerum, assumenda delectus accusantium. Ea iste obcaecati impedit quod iusto alias voluptatem inventore incidunt?
-      
-    </div>
-</div>
+  </div>
 </div>
